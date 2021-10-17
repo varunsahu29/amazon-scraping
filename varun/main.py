@@ -1,7 +1,8 @@
-import bs4, requests
+import bs4
+import requests
 
-# keyword = input("Enter word to be scraped:")
-keyword = "toy"
+keyword = input("Enter word to be scraped:")
+# keyword = "toy"
 keywords = ""
 for word in keyword:
     if word == " ":
