@@ -1,7 +1,7 @@
-import bs4, requests
+import bs4
+import requests
 
-# keyword = input("Enter word to be scraped:")
-keyword = "toy"
+keyword = input("Enter word to be scraped:")
 keywords = ""
 for word in keyword:
     if word == " ":
@@ -17,5 +17,3 @@ webpage = requests.get(URL, headers=HEADERS)
 # print(response.content)
 soup = bs4.BeautifulSoup(webpage.content, features="html.parser")
 elements = soup.find_all("img")
-print(URL)
-print(elements[0])
