@@ -21,7 +21,8 @@ Tools needed to run this project
 ```bash
 pip install virtualenv
 virtualenv env
-env\Scripts\activate
+windows: env\Scripts\activate
+Linux: source env/bin/activate
 pip install -r requirements.txt
 ```
 3.
